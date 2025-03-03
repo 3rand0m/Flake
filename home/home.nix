@@ -45,12 +45,7 @@
     btop
     tokyo-night-gtk
 
-  ]) ++ (with pkgs.gnome; [ 
-    gnome-tweaks
-    eog
-    gedit
-  ]);
-
+  ])
 
   programs.home-manager.enable = true;
 
