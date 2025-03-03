@@ -5,14 +5,17 @@
     twemoji-color-font
   ];
   fonts = {
-    fonts = with pkgs; [
+    packages = with pkgs; [  # Changed from 'fonts' to 'packages' (modern option name, though 'fonts' still works)
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
-      nerdfonts
+      # Replaced 'nerdfonts' with specific nerd-fonts packages
+      nerd-fonts.fira-code        # Already had fira-code, using nerd-fonts version
+      nerd-fonts.symbols-only     # For "Symbols Nerd Font" in fontconfig
+      nerd-fonts.jetbrains-mono   # Popular monospace font (optional, add/remove as desired)
+      nerd-fonts.iosevka          # Matches your "Iosevka Term" replacement
       twemoji-color-font
-      fira-code
-      fira-code-symbols
+      fira-code-symbols           # Keeping this as it’s separate from nerd-fonts
     ];
     fontconfig = {
       localConf = ''
@@ -246,5 +249,4 @@
       '';
     };
   };
-
 }
