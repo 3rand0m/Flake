@@ -49,7 +49,6 @@
     tokyo-night-gtk
 
   ]) ++ (with pkgs.gnome; [ 
-    nautilus
     zenity
     gnome-tweaks
     eog
