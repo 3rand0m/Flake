@@ -1,8 +1,8 @@
 { config, lib, pkgs, ... }:
 {
   imports = [
-    ./fonts
-    ./virtualisation
+    #./fonts
+    #./virtualisation
   ];
 
   programs.regreet.enable = true;
