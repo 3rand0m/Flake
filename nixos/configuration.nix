@@ -7,16 +7,14 @@
       ../hosts/desktop
     ];
 
-  # Bootloader.
-  # boot.loader.systemd-boot.enable = true;
-  # boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot";
-
-  boot.loader.grub.enable = true;
-  boot.loader.grub.devices = [ "nodev" ];
-  boot.loader.grub.efiInstallAsRemovable = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.useOSProber = true;
+  board.loader = {
+    grub = {
+      enable = true;
+      device = "/dev/sda";
+      useOSProber = true;
+      efiSupport = false;
+    };
+  };
 
   boot.loader.grub.theme = pkgs.stdenv.mkDerivation {
     pname = "distro-grub-themes";
