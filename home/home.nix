@@ -45,7 +45,7 @@
     btop
     tokyo-night-gtk
 
-  ])
+  ]);
 
   programs.home-manager.enable = true;
 
