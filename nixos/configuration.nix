@@ -3,7 +3,7 @@
 {
   imports =
     [
-      ./hardware-configuration.nix
+      ./EDPRWKS069.nix
       ../hosts/desktop
     ];
 
