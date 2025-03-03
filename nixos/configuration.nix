@@ -60,9 +60,6 @@
     driSupport32Bit = true;
   };
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   programs.steam = {
    enable = true;
    remotePlay.openFirewall = true;
