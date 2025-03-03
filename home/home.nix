@@ -46,7 +46,6 @@
     tokyo-night-gtk
 
   ]) ++ (with pkgs.gnome; [ 
-    zenity
     gnome-tweaks
     eog
     gedit
