@@ -7,7 +7,7 @@
       ../hosts/desktop
     ];
 
-  board.loader = {
+  boot.loader = {
     grub = {
       enable = true;
       device = "/dev/sda";
