@@ -56,8 +56,6 @@
   #Opengl
   hardware.opengl = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
   };
 
   # Allow unfree packages
@@ -69,7 +67,6 @@
    dedicatedServer.openFirewall = true;
   };
 
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
