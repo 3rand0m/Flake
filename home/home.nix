@@ -3,7 +3,7 @@
   imports = [
     hyprland.homeManagerModules.default
     #./environment
-    ./programs
+    #./programs
     #./scripts
     #./themes
   ];
@@ -57,15 +57,6 @@
     gedit
   ]);
 
-  dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-    };
-
-    "org/gnome/shell/extensions/user-theme" = {
-      name = "Tokyonight-Dark-B-LB";
-    };
-  };
 
   programs.home-manager.enable = true;
 
