@@ -48,11 +48,11 @@
    enable = true;
     # X11 keymap
     layout = "us";
-    xkbVariant = "";
+    xkb.variant = "";
   };
 
   #Opengl
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
   };
 
