@@ -120,7 +120,7 @@
   
   #Flakes
   nix = {
-    package = pkgs.nixVersions.unstable;
+    package = pkgs.nixVersions.git;
     extraOptions = "experimental-features = nix-command flakes";
  };
 }
