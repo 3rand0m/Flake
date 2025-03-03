@@ -16,7 +16,6 @@
   home.packages = (with pkgs; [
     
     #User Apps
-    celluloid
     librewolf
     cool-retro-term
 
@@ -35,7 +34,6 @@
     sqlite
 
     #misc 
-    neovim
     nano
     rofi
     wget
@@ -43,7 +41,6 @@
     slurp
     wl-clipboard
     pamixer
-    mpc-cli
     tty-clock
     btop
     tokyo-night-gtk
