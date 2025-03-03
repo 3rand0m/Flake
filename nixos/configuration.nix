@@ -105,9 +105,6 @@
    ];
   };
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   #Garbage colector
   nix.gc = {
     automatic = true;
